@@ -5,8 +5,7 @@ function calculateMaturityRate() {
   );
   const tenure = parseFloat(document.getElementById("tenure").value);
 
-  const maturityAmount =
-    (principle * (principle * interestRate * tenure)) / 100;
+  const maturityAmount = principle + (principle * interestRate * tenure) / 100;
 
   document.getElementById(
     "result"
